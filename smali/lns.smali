@@ -1,0 +1,8 @@
+.class interface abstract Llns;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;Llnl;)V
+.end method

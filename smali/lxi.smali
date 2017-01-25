@@ -1,0 +1,304 @@
+.class public final Llxi;
+.super Logh;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Logh",
+        "<",
+        "Llxi;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:[Llxh;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 4822
+    invoke-direct {p0}, Logh;-><init>()V
+
+    .line 4823
+    invoke-direct {p0}, Llxi;->d()Llxi;
+
+    .line 4824
+    return-void
+.end method
+
+.method private b(Logd;)Llxi;
+    .locals 4
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 4867
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, Logd;->a()I
+
+    move-result v0
+
+    .line 4868
+    sparse-switch v0, :sswitch_data_0
+
+    .line 4872
+    invoke-super {p0, p1, v0}, Logh;->a(Logd;I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 4873
+    :sswitch_0
+    return-object p0
+
+    .line 4878
+    :sswitch_1
+    const/16 v0, 0xa
+
+    .line 4879
+    invoke-static {p1, v0}, Logx;->a(Logd;I)I
+
+    move-result v2
+
+    .line 4880
+    iget-object v0, p0, Llxi;->a:[Llxh;
+
+    if-nez v0, :cond_2
+
+    move v0, v1
+
+    .line 4881
+    :goto_1
+    add-int/2addr v2, v0
+
+    new-array v2, v2, [Llxh;
+
+    .line 4883
+    if-eqz v0, :cond_1
+
+    .line 4884
+    iget-object v3, p0, Llxi;->a:[Llxh;
+
+    invoke-static {v3, v1, v2, v1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 4886
+    :cond_1
+    :goto_2
+    array-length v3, v2
+
+    add-int/lit8 v3, v3, -0x1
+
+    if-ge v0, v3, :cond_3
+
+    .line 4887
+    new-instance v3, Llxh;
+
+    invoke-direct {v3}, Llxh;-><init>()V
+
+    aput-object v3, v2, v0
+
+    .line 4888
+    aget-object v3, v2, v0
+
+    invoke-virtual {p1, v3}, Logd;->a(Logq;)V
+
+    .line 4889
+    invoke-virtual {p1}, Logd;->a()I
+
+    .line 4886
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_2
+
+    .line 4880
+    :cond_2
+    iget-object v0, p0, Llxi;->a:[Llxh;
+
+    array-length v0, v0
+
+    goto :goto_1
+
+    .line 4892
+    :cond_3
+    new-instance v3, Llxh;
+
+    invoke-direct {v3}, Llxh;-><init>()V
+
+    aput-object v3, v2, v0
+
+    .line 4893
+    aget-object v0, v2, v0
+
+    invoke-virtual {p1, v0}, Logd;->a(Logq;)V
+
+    .line 4894
+    iput-object v2, p0, Llxi;->a:[Llxh;
+
+    goto :goto_0
+
+    .line 4868
+    :sswitch_data_0
+    .sparse-switch
+        0x0 -> :sswitch_0
+        0xa -> :sswitch_1
+    .end sparse-switch
+.end method
+
+.method private d()Llxi;
+    .locals 1
+
+    .prologue
+    .line 4827
+    invoke-static {}, Llxh;->d()[Llxh;
+
+    move-result-object v0
+
+    iput-object v0, p0, Llxi;->a:[Llxh;
+
+    .line 4828
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Llxi;->unknownFieldData:Logk;
+
+    .line 4829
+    const/4 v0, -0x1
+
+    iput v0, p0, Llxi;->cachedSize:I
+
+    .line 4830
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public synthetic a(Logd;)Logq;
+    .locals 1
+
+    .prologue
+    .line 4800
+    invoke-direct {p0, p1}, Llxi;->b(Logd;)Llxi;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public a(Loge;)V
+    .locals 3
+
+    .prologue
+    .line 4836
+    iget-object v0, p0, Llxi;->a:[Llxh;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Llxi;->a:[Llxh;
+
+    array-length v0, v0
+
+    if-lez v0, :cond_1
+
+    .line 4837
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v1, p0, Llxi;->a:[Llxh;
+
+    array-length v1, v1
+
+    if-ge v0, v1, :cond_1
+
+    .line 4838
+    iget-object v1, p0, Llxi;->a:[Llxh;
+
+    aget-object v1, v1, v0
+
+    .line 4839
+    if-eqz v1, :cond_0
+
+    .line 4840
+    const/4 v2, 0x1
+
+    invoke-virtual {p1, v2, v1}, Loge;->b(ILogq;)V
+
+    .line 4837
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 4844
+    :cond_1
+    invoke-super {p0, p1}, Logh;->a(Loge;)V
+
+    .line 4845
+    return-void
+.end method
+
+.method protected b()I
+    .locals 4
+
+    .prologue
+    .line 4849
+    invoke-super {p0}, Logh;->b()I
+
+    move-result v1
+
+    .line 4850
+    iget-object v0, p0, Llxi;->a:[Llxh;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Llxi;->a:[Llxh;
+
+    array-length v0, v0
+
+    if-lez v0, :cond_1
+
+    .line 4851
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v2, p0, Llxi;->a:[Llxh;
+
+    array-length v2, v2
+
+    if-ge v0, v2, :cond_1
+
+    .line 4852
+    iget-object v2, p0, Llxi;->a:[Llxh;
+
+    aget-object v2, v2, v0
+
+    .line 4853
+    if-eqz v2, :cond_0
+
+    .line 4854
+    const/4 v3, 0x1
+
+    .line 4855
+    invoke-static {v3, v2}, Loge;->d(ILogq;)I
+
+    move-result v2
+
+    add-int/2addr v1, v2
+
+    .line 4851
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 4859
+    :cond_1
+    return v1
+.end method

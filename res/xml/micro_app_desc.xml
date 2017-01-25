@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wearableApp package="com.google.android.talk"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <versionCode>23673425</versionCode>
+    <versionName>16.0.144731607</versionName>
+    <path>HangoutsWearable.apk</path>
+</wearableApp>
